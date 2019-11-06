@@ -1,0 +1,14 @@
+https://maps.googleapis.com
+
+/maps/api/place/nearbysearch/json
+
+location = -33.8670522, 151.1957362
+radius = 500
+type = restaurant
+keyword = cruise
+key = AIzaSyAVF4GOxN_u6-d22GDvWsWpYXpXvzG0tYE
+
+
+(compile) javac -classpath lib/* -d ./bin ./src/SoapTests/*.java
+
+(execute) java -cp bin;lib/* org.testng.TestNG testng.xml

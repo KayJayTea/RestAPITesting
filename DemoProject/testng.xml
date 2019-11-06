@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="REST_API_Tests ">
+    	<classes>
+    		<class name="tests.a_Basics_Get"/>
+    		<class name="tests.b_Basics_Post_JSON"/>
+    		<class name="tests.c_Basics_Add_and_Delete"/>
+      		<class name="tests.d_Basics_Post_XML"/>
+      		<class name="tests.e_Basics_Get_All_Reponses"/>
+      		<!-- <class name="tests.f_DynamicJson"/> -->      
+      		<class name="tests.g_DataProvider"/>      
+      		<!-- <class name="tests.h_StaticJson"/> -->
+    	</classes>
+	</test> <!-- REST_API_Tests  -->
+</suite> <!-- Suite -->

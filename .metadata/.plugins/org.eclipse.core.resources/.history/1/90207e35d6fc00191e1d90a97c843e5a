@@ -1,0 +1,40 @@
+package Students.com.students.tests;
+
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.*;
+
+import java.util.List;
+
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.parsing.Parser;
+import io.restassured.response.Response;
+
+public class student_tests {
+	
+	public static Response getResponse(String endpoint) {
+		RestAssured.defaultParser = Parser.JSON;
+		
+		return given()
+				.when()
+				.get(endpoint)
+				.then()
+				.contentType(ContentType.JSON)
+				.body("firstName[0]", equalTo("Vernon")).and()
+				.body("firstName[1]", equalTo("Murphy")).and()
+				.extract()
+				.response();
+	}
+	
+	public static void main(String[] args) {
+		Response response = getResponse("http://localhost:8080/student/list");
+		
+		List<String> jsonResponse = response.jsonPath().getList("$");
+		
+		System.out.println(jsonResponse.size());
+		
+		String firstNames = response.jsonPath().getString("firstName");
+		System.out.println(firstNames);
+	}
+
+}

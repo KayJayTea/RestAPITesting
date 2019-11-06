@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="8629" started-at="2019-09-11T13:18:02 EDT" finished-at="2019-09-11T13:18:10 EDT">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="8629" started-at="2019-09-11T13:18:02 EDT" finished-at="2019-09-11T13:18:10 EDT">
+      <class name="SoapTests.library_all">
+        <test-method status="PASS" signature="SoapTest()[pri:0, instance:SoapTests.library_all@80503]" name="SoapTest" duration-ms="1487" started-at="2019-09-11T13:18:05 EDT" finished-at="2019-09-11T13:18:06 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SoapTest -->
+      </class> <!-- SoapTests.library_all -->
+      <class name="SoapTests.multipleTestSuites">
+        <test-method status="PASS" signature="MultipleTestSuiteTest()[pri:0, instance:SoapTests.multipleTestSuites@4b553d26]" name="MultipleTestSuiteTest" duration-ms="2425" started-at="2019-09-11T13:18:06 EDT" finished-at="2019-09-11T13:18:09 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MultipleTestSuiteTest -->
+      </class> <!-- SoapTests.multipleTestSuites -->
+      <class name="SoapTests.library_addBook">
+        <test-method status="PASS" signature="addBookTest()[pri:0, instance:SoapTests.library_addBook@bd8db5a]" name="addBookTest" duration-ms="2859" started-at="2019-09-11T13:18:02 EDT" finished-at="2019-09-11T13:18:05 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBookTest -->
+      </class> <!-- SoapTests.library_addBook -->
+      <class name="SoapTests.employee_groovyScript">
+        <test-method status="PASS" signature="employeeWithScript()[pri:0, instance:SoapTests.employee_groovyScript@69a3d1d]" name="employeeWithScript" duration-ms="1518" started-at="2019-09-11T13:18:09 EDT" finished-at="2019-09-11T13:18:10 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- employeeWithScript -->
+      </class> <!-- SoapTests.employee_groovyScript -->
+      <class name="SoapTests.library_deleteBook">
+        <test-method status="PASS" signature="addBookTest()[pri:0, instance:SoapTests.library_deleteBook@2f943d71]" name="addBookTest" duration-ms="306" started-at="2019-09-11T13:18:05 EDT" finished-at="2019-09-11T13:18:05 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBookTest -->
+      </class> <!-- SoapTests.library_deleteBook -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

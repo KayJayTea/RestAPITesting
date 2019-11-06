@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="14" passed="14">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="10756" started-at="2019-08-26T13:39:22 EDT" finished-at="2019-08-26T13:39:33 EDT">
+    <groups>
+    </groups>
+    <test name="REST_API_Tests " duration-ms="10756" started-at="2019-08-26T13:39:22 EDT" finished-at="2019-08-26T13:39:33 EDT">
+      <class name="test_framework.b_Basics_Post_JSON">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test_framework.b_Basics_Post_JSON@443118b0]" name="setUp" is-config="true" duration-ms="1" started-at="2019-08-26T13:39:22 EDT" finished-at="2019-08-26T13:39:22 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="postData()[pri:0, instance:test_framework.b_Basics_Post_JSON@443118b0]" name="postData" duration-ms="659" started-at="2019-08-26T13:39:26 EDT" finished-at="2019-08-26T13:39:26 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postData -->
+      </class> <!-- test_framework.b_Basics_Post_JSON -->
+      <class name="test_framework.a_Basics_Get">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test_framework.a_Basics_Get@5fe94a96]" name="setUp" is-config="true" duration-ms="14" started-at="2019-08-26T13:39:22 EDT" finished-at="2019-08-26T13:39:22 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Test()[pri:0, instance:test_framework.a_Basics_Get@5fe94a96]" name="Test" duration-ms="3236" started-at="2019-08-26T13:39:22 EDT" finished-at="2019-08-26T13:39:26 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test -->
+      </class> <!-- test_framework.a_Basics_Get -->
+      <class name="test_framework.i_PostGetDeleteTweet">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test_framework.i_PostGetDeleteTweet@30c15d8b]" name="setUp" is-config="true" duration-ms="1" started-at="2019-08-26T13:39:22 EDT" finished-at="2019-08-26T13:39:22 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="postTweet()[pri:1, instance:test_framework.i_PostGetDeleteTweet@30c15d8b]" name="postTweet" duration-ms="386" started-at="2019-08-26T13:39:32 EDT" finished-at="2019-08-26T13:39:33 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTweet -->
+        <test-method status="PASS" signature="getLatestTweet()[pri:2, instance:test_framework.i_PostGetDeleteTweet@30c15d8b]" name="getLatestTweet" duration-ms="320" started-at="2019-08-26T13:39:33 EDT" finished-at="2019-08-26T13:39:33 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLatestTweet -->
+        <test-method status="PASS" signature="deleteTweet()[pri:3, instance:test_framework.i_PostGetDeleteTweet@30c15d8b]" name="deleteTweet" duration-ms="214" started-at="2019-08-26T13:39:33 EDT" finished-at="2019-08-26T13:39:33 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet -->
+      </class> <!-- test_framework.i_PostGetDeleteTweet -->
+      <class name="test_framework.d_Basics_Post_XML">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test_framework.d_Basics_Post_XML@74235045]" name="setUp" is-config="true" duration-ms="0" started-at="2019-08-26T13:39:22 EDT" finished-at="2019-08-26T13:39:22 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Test()[pri:0, instance:test_framework.d_Basics_Post_XML@74235045]" name="Test" duration-ms="665" started-at="2019-08-26T13:39:28 EDT" finished-at="2019-08-26T13:39:28 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test -->
+      </class> <!-- test_framework.d_Basics_Post_XML -->
+      <class name="test_framework.e_Basics_Get_All_Reponses">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test_framework.e_Basics_Get_All_Reponses@618b19ad]" name="setUp" is-config="true" duration-ms="1" started-at="2019-08-26T13:39:22 EDT" finished-at="2019-08-26T13:39:22 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Test()[pri:0, instance:test_framework.e_Basics_Get_All_Reponses@618b19ad]" name="Test" duration-ms="434" started-at="2019-08-26T13:39:28 EDT" finished-at="2019-08-26T13:39:29 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test -->
+      </class> <!-- test_framework.e_Basics_Get_All_Reponses -->
+      <class name="test_framework.g_DataProvider">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test_framework.g_DataProvider@2d3379b4]" name="setUp" is-config="true" duration-ms="0" started-at="2019-08-26T13:39:22 EDT" finished-at="2019-08-26T13:39:22 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="AddBook(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_framework.g_DataProvider@2d3379b4]" name="AddBook" duration-ms="599" started-at="2019-08-26T13:39:29 EDT" data-provider="BooksData" finished-at="2019-08-26T13:39:29 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automation Test Vol.1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[478AAA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Kris Todd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddBook -->
+        <test-method status="PASS" signature="AddBook(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_framework.g_DataProvider@2d3379b4]" name="AddBook" duration-ms="583" started-at="2019-08-26T13:39:29 EDT" data-provider="BooksData" finished-at="2019-08-26T13:39:30 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automation Test Vol.2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[658BBB]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[222]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Kris Todd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddBook -->
+        <test-method status="PASS" signature="AddBook(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test_framework.g_DataProvider@2d3379b4]" name="AddBook" duration-ms="568" started-at="2019-08-26T13:39:30 EDT" data-provider="BooksData" finished-at="2019-08-26T13:39:30 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automation Test Vol.3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[25478CCC]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[333]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Kris Todd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddBook -->
+        <test-method status="PASS" signature="DeleteBook(java.lang.String, java.lang.String)[pri:0, instance:test_framework.g_DataProvider@2d3379b4]" name="DeleteBook" duration-ms="581" started-at="2019-08-26T13:39:30 EDT" data-provider="ID_No" finished-at="2019-08-26T13:39:31 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[478AAA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[111]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteBook -->
+        <test-method status="PASS" signature="DeleteBook(java.lang.String, java.lang.String)[pri:0, instance:test_framework.g_DataProvider@2d3379b4]" name="DeleteBook" duration-ms="568" started-at="2019-08-26T13:39:31 EDT" data-provider="ID_No" finished-at="2019-08-26T13:39:32 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[658BBB]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[222]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteBook -->
+        <test-method status="PASS" signature="DeleteBook(java.lang.String, java.lang.String)[pri:0, instance:test_framework.g_DataProvider@2d3379b4]" name="DeleteBook" duration-ms="580" started-at="2019-08-26T13:39:32 EDT" data-provider="ID_No" finished-at="2019-08-26T13:39:32 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[25478CCC]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[333]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteBook -->
+      </class> <!-- test_framework.g_DataProvider -->
+      <class name="test_framework.c_Basics_Add_and_Delete">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test_framework.c_Basics_Add_and_Delete@765d7657]" name="setUp" is-config="true" duration-ms="1" started-at="2019-08-26T13:39:22 EDT" finished-at="2019-08-26T13:39:22 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="AddAndDeletePlace()[pri:0, instance:test_framework.c_Basics_Add_and_Delete@765d7657]" name="AddAndDeletePlace" duration-ms="1291" started-at="2019-08-26T13:39:26 EDT" finished-at="2019-08-26T13:39:28 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddAndDeletePlace -->
+      </class> <!-- test_framework.c_Basics_Add_and_Delete -->
+    </test> <!-- REST_API_Tests  -->
+  </suite> <!-- Suite -->
+</testng-results>

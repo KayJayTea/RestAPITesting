@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\AAO8676\Documents\workspace-java-rest-api-automation\RESTAssuredAPITesting\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods,   14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_framework.c_Basics_Add_and_Delete" hash-for-method="AddAndDeletePlace">AddAndDeletePlace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_framework.g_DataProvider" hash-for-method="AddBook(Automation Test Vol.2, 658BBB, 222, Kris Todd)">AddBook(Automation Test Vol.2, 658BBB, 222, Kris Todd)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_framework.g_DataProvider" hash-for-method="AddBook(Automation Test Vol.1, 478AAA, 111, Kris Todd)">AddBook(Automation Test Vol.1, 478AAA, 111, Kris Todd)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_framework.g_DataProvider" hash-for-method="AddBook(Automation Test Vol.3, 25478CCC, 333, Kris Todd)">AddBook(Automation Test Vol.3, 25478CCC, 333, Kris Todd)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_framework.g_DataProvider" hash-for-method="DeleteBook(25478CCC, 333)">DeleteBook(25478CCC, 333)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_framework.g_DataProvider" hash-for-method="DeleteBook(478AAA, 111)">DeleteBook(478AAA, 111)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_framework.g_DataProvider" hash-for-method="DeleteBook(658BBB, 222)">DeleteBook(658BBB, 222)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_framework.a_Basics_Get" hash-for-method="Test">Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_framework.e_Basics_Get_All_Reponses" hash-for-method="Test">Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_framework.d_Basics_Post_XML" hash-for-method="Test">Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_framework.i_PostGetDeleteTweet" hash-for-method="deleteTweet">deleteTweet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_framework.i_PostGetDeleteTweet" hash-for-method="getLatestTweet">getLatestTweet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_framework.b_Basics_Post_JSON" hash-for-method="postData">postData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test_framework.i_PostGetDeleteTweet" hash-for-method="postTweet">postTweet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test_framework.i_PostGetDeleteTweet</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteTweet">
+                  </a> <!-- deleteTweet -->
+                  <span class="method-name">deleteTweet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getLatestTweet">
+                  </a> <!-- getLatestTweet -->
+                  <span class="method-name">getLatestTweet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postTweet">
+                  </a> <!-- postTweet -->
+                  <span class="method-name">postTweet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test_framework.b_Basics_Post_JSON</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="postData">
+                  </a> <!-- postData -->
+                  <span class="method-name">postData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test_framework.a_Basics_Get</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test">
+                  </a> <!-- Test -->
+                  <span class="method-name">Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test_framework.c_Basics_Add_and_Delete</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddAndDeletePlace">
+                  </a> <!-- AddAndDeletePlace -->
+                  <span class="method-name">AddAndDeletePlace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test_framework.d_Basics_Post_XML</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test">
+                  </a> <!-- Test -->
+                  <span class="method-name">Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test_framework.e_Basics_Get_All_Reponses</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test">
+                  </a> <!-- Test -->
+                  <span class="method-name">Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test_framework.g_DataProvider</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddBook(Automation Test Vol.2, 658BBB, 222, Kris Todd)">
+                  </a> <!-- AddBook(Automation Test Vol.2, 658BBB, 222, Kris Todd) -->
+                  <span class="method-name">AddBook</span>
+                  <span class="parameters">(Automation Test Vol.2, 658BBB, 222, Kris Todd)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddBook(Automation Test Vol.1, 478AAA, 111, Kris Todd)">
+                  </a> <!-- AddBook(Automation Test Vol.1, 478AAA, 111, Kris Todd) -->
+                  <span class="method-name">AddBook</span>
+                  <span class="parameters">(Automation Test Vol.1, 478AAA, 111, Kris Todd)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddBook(Automation Test Vol.3, 25478CCC, 333, Kris Todd)">
+                  </a> <!-- AddBook(Automation Test Vol.3, 25478CCC, 333, Kris Todd) -->
+                  <span class="method-name">AddBook</span>
+                  <span class="parameters">(Automation Test Vol.3, 25478CCC, 333, Kris Todd)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteBook(25478CCC, 333)">
+                  </a> <!-- DeleteBook(25478CCC, 333) -->
+                  <span class="method-name">DeleteBook</span>
+                  <span class="parameters">(25478CCC, 333)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteBook(478AAA, 111)">
+                  </a> <!-- DeleteBook(478AAA, 111) -->
+                  <span class="method-name">DeleteBook</span>
+                  <span class="parameters">(478AAA, 111)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteBook(658BBB, 222)">
+                  </a> <!-- DeleteBook(658BBB, 222) -->
+                  <span class="method-name">DeleteBook</span>
+                  <span class="parameters">(658BBB, 222)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\AAO8676\Documents\workspace-java-rest-api-automation\RESTAssuredAPITesting\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;resources.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;REST_API_Tests &quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test_framework.a_Basics_Get&quot;/&gt;
+      &lt;class name=&quot;test_framework.b_Basics_Post_JSON&quot;/&gt;
+      &lt;class name=&quot;test_framework.c_Basics_Add_and_Delete&quot;/&gt;
+      &lt;class name=&quot;test_framework.d_Basics_Post_XML&quot;/&gt;
+      &lt;class name=&quot;test_framework.e_Basics_Get_All_Reponses&quot;/&gt;
+      &lt;class name=&quot;test_framework.g_DataProvider&quot;/&gt;
+      &lt;class name=&quot;test_framework.i_PostGetDeleteTweet&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- REST_API_Tests  --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">REST_API_Tests  (7 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Test')
+data.setCell(0, 2, 'test_framework.a_Basics_Get')
+data.setCell(0, 3, 3236);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'AddAndDeletePlace')
+data.setCell(1, 2, 'test_framework.c_Basics_Add_and_Delete')
+data.setCell(1, 3, 1291);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Test')
+data.setCell(2, 2, 'test_framework.d_Basics_Post_XML')
+data.setCell(2, 3, 665);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'postData')
+data.setCell(3, 2, 'test_framework.b_Basics_Post_JSON')
+data.setCell(3, 3, 659);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'AddBook')
+data.setCell(4, 2, 'test_framework.g_DataProvider')
+data.setCell(4, 3, 599);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'AddBook')
+data.setCell(5, 2, 'test_framework.g_DataProvider')
+data.setCell(5, 3, 583);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'DeleteBook')
+data.setCell(6, 2, 'test_framework.g_DataProvider')
+data.setCell(6, 3, 581);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'DeleteBook')
+data.setCell(7, 2, 'test_framework.g_DataProvider')
+data.setCell(7, 3, 580);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'DeleteBook')
+data.setCell(8, 2, 'test_framework.g_DataProvider')
+data.setCell(8, 3, 568);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'AddBook')
+data.setCell(9, 2, 'test_framework.g_DataProvider')
+data.setCell(9, 3, 568);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Test')
+data.setCell(10, 2, 'test_framework.e_Basics_Get_All_Reponses')
+data.setCell(10, 3, 434);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'postTweet')
+data.setCell(11, 2, 'test_framework.i_PostGetDeleteTweet')
+data.setCell(11, 3, 386);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'getLatestTweet')
+data.setCell(12, 2, 'test_framework.i_PostGetDeleteTweet')
+data.setCell(12, 3, 320);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'deleteTweet')
+data.setCell(13, 2, 'test_framework.i_PostGetDeleteTweet')
+data.setCell(13, 3, 214);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_framework.a_Basics_Get</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_framework.b_Basics_Post_JSON</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_framework.c_Basics_Add_and_Delete</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_framework.d_Basics_Post_XML</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">16 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_framework.e_Basics_Get_All_Reponses</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">16 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_framework.g_DataProvider</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">17 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_framework.i_PostGetDeleteTweet</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">17 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_framework.a_Basics_Get</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Test</span>
+                <span class="method-start">44 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_framework.b_Basics_Post_JSON</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">postData</span>
+                <span class="method-start">3289 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_framework.c_Basics_Add_and_Delete</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">AddAndDeletePlace</span>
+                <span class="method-start">3949 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_framework.d_Basics_Post_XML</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Test</span>
+                <span class="method-start">5241 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_framework.e_Basics_Get_All_Reponses</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Test</span>
+                <span class="method-start">5907 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_framework.g_DataProvider</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">AddBook(Automation Test Vol.1, 478AAA, 111, Kris Todd)</span>
+                <span class="method-start">6349 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddBook(Automation Test Vol.2, 658BBB, 222, Kris Todd)</span>
+                <span class="method-start">6949 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddBook(Automation Test Vol.3, 25478CCC, 333, Kris Todd)</span>
+                <span class="method-start">7533 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DeleteBook(478AAA, 111)</span>
+                <span class="method-start">8102 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DeleteBook(658BBB, 222)</span>
+                <span class="method-start">8683 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DeleteBook(25478CCC, 333)</span>
+                <span class="method-start">9251 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test_framework.i_PostGetDeleteTweet</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">postTweet</span>
+                <span class="method-start">9831 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getLatestTweet</span>
+                <span class="method-start">10218 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteTweet</span>
+                <span class="method-start">10539 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ReusableMethods.java&apos; to &apos;com.students.tests/src/test/java/Students.com.students.tests&apos;&#x0D;&#x0A;- Original project: &apos;RESTAssuredAPITesting&apos;&#x0D;&#x0A;- Destination element: &apos;com.students.tests/src/test/java/Students.com.students.tests&apos;&#x0D;&#x0A;- Original element: &apos;test_framework.ReusableMethods.java&apos;" description="Copy compilation unit" destination="=com.students.tests/src\/test\/java&lt;Students.com.students.tests" element1="/src\/test\/java&lt;test_framework{ReusableMethods.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1572629660633" units="1" version="1.0"/>
+</session>

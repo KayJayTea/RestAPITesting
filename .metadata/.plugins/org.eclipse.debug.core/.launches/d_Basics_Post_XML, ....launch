@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+<stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.m2e.launchconfig.classpathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="RESTAssuredAPITesting"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
+<mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS"/>
+<listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+<listEntry value="test_framework.b_Basics_Post_JSON"/>
+<listEntry value="test_framework.a_Basics_Get"/>
+<listEntry value="test_framework.i_PostGetDeleteTweet"/>
+<listEntry value="test_framework.f_DynamicJson"/>
+<listEntry value="test_framework.d_Basics_Post_XML"/>
+<listEntry value="test_framework.e_Basics_Get_All_Reponses"/>
+<listEntry value="test_framework.g_DataProvider"/>
+<listEntry value="test_framework.h_StaticJson"/>
+<listEntry value="test_framework.c_Basics_Add_and_Delete"/>
+</listAttribute>
+<listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
+<listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+<stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>
+<intAttribute key="org.testng.eclipse.TYPE" value="1"/>
+</launchConfiguration>

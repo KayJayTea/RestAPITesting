@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test thread-count="5" verbose="0" name="REST_API_Tests (failed)">
+    <classes>
+      <class name="test_framework.g_DataProvider">
+        <methods>
+          <include name="setUp"/>
+          <include name="AddBook"/>
+          <include name="DeleteBook"/>
+        </methods>
+      </class> <!-- test_framework.g_DataProvider -->
+      <class name="test_framework.c_Basics_Add_and_Delete">
+        <methods>
+          <include name="setUp"/>
+          <include name="AddAndDeletePlace"/>
+        </methods>
+      </class> <!-- test_framework.c_Basics_Add_and_Delete -->
+      <class name="test_framework.e_Basics_Get_All_Reponses">
+        <methods>
+          <include name="setUp"/>
+          <include name="Test"/>
+        </methods>
+      </class> <!-- test_framework.e_Basics_Get_All_Reponses -->
+      <class name="test_framework.b_Basics_Post_JSON">
+        <methods>
+          <include name="setUp"/>
+          <include name="postData"/>
+        </methods>
+      </class> <!-- test_framework.b_Basics_Post_JSON -->
+      <class name="test_framework.d_Basics_Post_XML">
+        <methods>
+          <include name="Test"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test_framework.d_Basics_Post_XML -->
+      <class name="test_framework.a_Basics_Get">
+        <methods>
+          <include name="Test"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test_framework.a_Basics_Get -->
+    </classes>
+  </test> <!-- REST_API_Tests (failed) -->
+</suite> <!-- Failed suite [Suite] -->

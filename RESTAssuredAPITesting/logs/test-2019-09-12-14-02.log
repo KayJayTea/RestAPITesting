@@ -1,0 +1,51 @@
+11:27:42.198 [main] INFO  test_framework.a_Basics_Get - HOST (a_Basics_Get): https://maps.googleapis.com
+11:27:44.683 [main] INFO  test_framework.b_Basics_Post_JSON - HOST (b_Basics_Post_JSON): http://216.10.245.166
+11:27:45.397 [main] INFO  test_framework.b_Basics_Post_JSON - {"status":"OK","place_id":"2ddd0b7364d195cb2f17d236d49c718e","scope":"APP","reference":"d13a3754571116750efefcb1fc901749d13a3754571116750efefcb1fc901749","id":"d13a3754571116750efefcb1fc901749"}
+11:27:45.401 [main] INFO  test_framework.c_Basics_Add_and_Delete - HOST (c_Basics_Add_and_Delete): http://216.10.245.166
+11:27:45.401 [main] INFO  test_framework.c_Basics_Add_and_Delete - Key used: qaclick123
+11:27:46.078 [main] INFO  test_framework.c_Basics_Add_and_Delete - {"status":"OK","place_id":"9440402e2512068b0cb8396115ab384b","scope":"APP","reference":"6cac3cd4b19b4f4766d223e704c4469c6cac3cd4b19b4f4766d223e704c4469c","id":"6cac3cd4b19b4f4766d223e704c4469c"}
+11:27:46.088 [main] INFO  test_framework.c_Basics_Add_and_Delete - Place ID: 9440402e2512068b0cb8396115ab384b
+11:27:46.807 [main] INFO  test_framework.c_Basics_Add_and_Delete - {"status":"OK"}
+11:27:46.815 [main] INFO  test_framework.d_Basics_Post_XML - HOST (d_Basics_Post_XML): 
+11:27:47.463 [main] INFO  test_framework.d_Basics_Post_XML - Place ID: ec7d0bf4c53333d05a0425f04e471010
+11:27:47.470 [main] INFO  test_framework.e_Basics_Get_All_Reponses - HOST (e_Basics_Get_All_Reponses): 
+11:27:47.801 [main] INFO  test_framework.e_Basics_Get_All_Reponses - Count: 10
+11:27:47.807 [main] INFO  test_framework.e_Basics_Get_All_Reponses - Hampton
+11:27:47.814 [main] INFO  test_framework.e_Basics_Get_All_Reponses - Hampton Roads Hurling Club
+11:27:47.822 [main] INFO  test_framework.e_Basics_Get_All_Reponses - Gosnold's Hope Park
+11:27:47.830 [main] INFO  test_framework.e_Basics_Get_All_Reponses - Gosnold's Hope Park Public Boat Ramp
+11:27:47.838 [main] INFO  test_framework.e_Basics_Get_All_Reponses - A-1 Paint & Wallpaper
+11:27:47.844 [main] INFO  test_framework.e_Basics_Get_All_Reponses - Gosnold Parking Lot
+11:27:47.854 [main] INFO  test_framework.e_Basics_Get_All_Reponses - Watson's Petroleum Inc
+11:27:47.862 [main] INFO  test_framework.e_Basics_Get_All_Reponses - Bay Roofing
+11:27:47.868 [main] INFO  test_framework.e_Basics_Get_All_Reponses - Hampton BMX
+11:27:47.876 [main] INFO  test_framework.e_Basics_Get_All_Reponses - Willow Oaks
+11:27:47.892 [main] INFO  test_framework.g_DataProvider - HOST (g_DataProvider): http://216.10.245.166
+11:27:48.550 [main] INFO  test_framework.g_DataProvider - 478AAA111: book is successfully added.
+11:27:48.562 [main] INFO  test_framework.g_DataProvider - HOST (g_DataProvider): http://216.10.245.166
+11:27:49.174 [main] INFO  test_framework.g_DataProvider - 658BBB222: book is successfully added.
+11:27:49.177 [main] INFO  test_framework.g_DataProvider - HOST (g_DataProvider): http://216.10.245.166
+11:27:49.811 [main] INFO  test_framework.g_DataProvider - 25478CCC333: book is successfully added.
+11:27:49.817 [main] INFO  test_framework.g_DataProvider - HOST (g_DataProvider): http://216.10.245.166
+11:27:50.421 [main] INFO  test_framework.g_DataProvider - 478AAA111: book is successfully deleted
+11:27:50.423 [main] INFO  test_framework.g_DataProvider - HOST (g_DataProvider): http://216.10.245.166
+11:27:51.077 [main] INFO  test_framework.g_DataProvider - 658BBB222: book is successfully deleted
+11:27:51.079 [main] INFO  test_framework.g_DataProvider - HOST (g_DataProvider): http://216.10.245.166
+11:27:51.670 [main] INFO  test_framework.g_DataProvider - 25478CCC333: book is successfully deleted
+11:27:51.673 [main] INFO  test_framework.i_PostGetDeleteTweet - HOST (i_PostTweet): https://api.twitter.com/1.1/statuses
+11:27:52.110 [main] INFO  test_framework.i_PostGetDeleteTweet - TWEET ID: 1169995636952969217
+
+11:27:52.116 [main] INFO  test_framework.i_PostGetDeleteTweet - HOST (i_GetTweet): https://api.twitter.com/1.1/statuses
+11:27:52.416 [main] INFO  test_framework.i_PostGetDeleteTweet - TWEET: [Testing twitter posts through automation]
+
+11:27:52.419 [main] INFO  test_framework.i_PostGetDeleteTweet - HOST (i_DeleteTweet): https://api.twitter.com/1.1/statuses
+11:27:52.716 [main] INFO  test_framework.i_PostGetDeleteTweet - DELETED TWEET: Testing twitter posts through automation
+
+14:02:37.230 [main] INFO  test_framework.e_Basics_Get_All_Reponses - HOST (e_Basics_Get_All_Reponses): 
+14:02:39.520 [main] INFO  test_framework.e_Basics_Get_All_Reponses - Count: 10
+14:02:39.552 [main] INFO  test_framework.e_Basics_Get_All_Reponses - Hampton
+14:02:39.560 [main] INFO  test_framework.e_Basics_Get_All_Reponses - Hampton Roads Hurling Club
+14:02:39.567 [main] INFO  test_framework.e_Basics_Get_All_Reponses - Gosnold's Hope Park
+14:02:39.578 [main] INFO  test_framework.e_Basics_Get_All_Reponses - Gosnold's Hope Park Public Boat Ramp
+14:02:39.585 [main] INFO  test_framework.e_Basics_Get_All_Reponses - A-1 Paint & Wallpaper
+14:02:39.594 [main] INFO  test_framework.e_Basics_Get_All_Reponses - Gosnold Parking Lot

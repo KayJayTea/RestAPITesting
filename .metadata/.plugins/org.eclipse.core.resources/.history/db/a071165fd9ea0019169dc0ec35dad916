@@ -1,0 +1,54 @@
+package com.assertions.examples;
+
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasItem;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+
+public class AssertionsExamples {
+	
+	static final String API_KEY = "8ZPHAxbFRvyYPATX569FK1JAYTKWxhYE";
+	
+	@BeforeClass
+	public static void init() {
+		
+		RestAssured.baseURI = "https://api.nytimes.com";
+		RestAssured.basePath = "/svc/books/v3";
+	}
+	
+	// 1) Verify if the number of items is equal to 59
+	@Test
+	public void test_number_of_books() {
+		
+		given()
+			.queryParam("api-key", API_KEY)
+			.when().get("/lists/names.json")
+			.then()
+			.body("num_results", equalTo(59));
+	}
+	
+	// 2) Verify Copyright
+	@Test
+	public void test_query() {
+		given()
+			.queryParam("api-key", API_KEY)
+			.when().get("/lists/names.json")
+			.then()
+			.body("copyright", equalTo("Copyright (c) 2019 The New York Times Company.  All Rights Reserved."));
+	}
+	
+	// 3) Check single name in ArrayList
+	@Test
+	public void test_array() {
+		given()
+			.queryParam("api-key", API_KEY)
+			.when()
+			.get("/lists/names.json")
+			.then()
+			.body("results.list_name", hasItem("Combined Print and E-Book Fictions"));
+	}
+}

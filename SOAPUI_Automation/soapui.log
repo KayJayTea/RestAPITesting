@@ -1,0 +1,9 @@
+2019-09-11 13:18:02,392 WARN  [SoapUI] Missing folder [C:\Users\AAO8676\Documents\workspace-java-rest-api-automation\SOAPUI_Automation\ext] for external libraries
+2019-09-11 13:18:02,621 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\AAO8676\soapui-settings.xml]
+2019-09-11 13:18:03,381 INFO  [PluginManager] 0 plugins loaded in 2 ms
+2019-09-11 13:18:03,381 INFO  [DefaultSoapUICore] All plugins loaded
+2019-09-11 13:18:04,115 INFO  [WsdlProject] Loaded project from [file:/C:/Users/AAO8676/Documents/SOAPUI/LibraryAPI.xml]
+2019-09-11 13:18:05,028 INFO  [WsdlProject] Loaded project from [file:/C:/Users/AAO8676/Documents/SOAPUI/LibraryAPI.xml]
+2019-09-11 13:18:05,333 INFO  [WsdlProject] Loaded project from [file:/C:/Users/AAO8676/Documents/SOAPUI/LibraryAPI.xml]
+2019-09-11 13:18:06,821 INFO  [WsdlProject] Loaded project from [file:/C:/Users/AAO8676/Documents/SOAPUI/LibraryAPI.xml]
+2019-09-11 13:18:09,292 INFO  [WsdlProject] Loaded project from [file:/C:/Users/AAO8676/Documents/SOAPUI/Automation-soapui-project.xml]

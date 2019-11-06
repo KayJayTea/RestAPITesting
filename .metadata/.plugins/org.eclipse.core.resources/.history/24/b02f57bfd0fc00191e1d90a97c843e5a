@@ -1,0 +1,36 @@
+package Students.com.students.tests;
+
+import static io.restassured.RestAssured.given;
+
+import org.junit.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+
+public class student_tests {
+	
+	@Test
+	public void findStudents() {
+		RestAssured.baseURI = "http://localhost:8080";
+		
+		Response resp = 
+				given()
+				.log().all()
+				.when()
+				.get("/student/list")
+				.then().assertThat().statusCode(200)
+				.extract().response();
+		
+		JsonPath jsp = ReusableMethods.rawToJSON(resp);
+		int count = jsp.get("results.size()");
+		
+		System.out.println("Count: " + count);
+		
+		for(int i = 0; i < count; i++) {
+			System.out.println(jsp.getString("results["+i+"].firstName"));
+		}
+		
+	}
+
+}

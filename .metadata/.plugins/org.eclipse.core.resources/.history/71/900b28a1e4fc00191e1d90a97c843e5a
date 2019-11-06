@@ -1,0 +1,62 @@
+package gpath.com.tests;
+
+import static io.restassured.RestAssured.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class gpath_tests {
+	
+	@BeforeClass
+	public static void setupRestAssured() {
+		RestAssured.baseURI = "http://api.football-data.org";
+		RestAssured.basePath = "/v2/";
+		RequestSpecification requestSpecs = new RequestSpecBuilder().
+				addHeader("X-Auth-Token", "11601c3eb7e24713b163491f2782eb99").
+				addHeader("X-Response-Control", "minified").
+				build();
+		
+		RestAssured.requestSpecification = requestSpecs;
+		
+	}
+	
+	@Test
+	public void extractSingleValue_findSingleTeamName() {
+		Response response = get("teams/66");
+		String teamName = response.path("name");
+		System.out.println("Find a Single Team: " + teamName);
+	}
+	
+	@Test
+	public void extractSingleValue_findSingleTeamName_specifyJsonPath() {
+		Response response = get("teams/66");
+		JsonPath jsonPath = new JsonPath(response.asString());
+		String teamName = jsonPath.get("name");
+		System.out.println("Specify JsonPAth: " + teamName);
+	}
+	
+	@Test
+	public void extractSingleValue_findSingleTeamName_responseAsAString() {
+		String responseAsAString = get("teams/66").asString();
+		String teamName = JsonPath.from(responseAsAString).get("name");
+		System.out.println("Response as a String: " + teamName);
+	}
+	
+	@Test
+	public void extractSingleValue_findSingleTeamName_getEverythingInOneGo() {
+		String teamName = get("teams/66").path("name");
+		System.out.println("Get everything in one go: " + teamName);
+	}
+	
+	@Test
+	public void extractSingleValue_findSingleTeamName_useAssertion() {
+		given().when().get("teams/66").then().assertThat().body("name", equalTo("Manchester United FC"));
+	}
+
+}

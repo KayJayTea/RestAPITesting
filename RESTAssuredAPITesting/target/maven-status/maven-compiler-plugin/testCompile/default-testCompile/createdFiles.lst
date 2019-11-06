@@ -1,0 +1,8 @@
+test_framework\d_Basics_Post_XML.class
+test_framework\h_StaticJson.class
+test_framework\a_Basics_Get.class
+test_framework\b_Basics_Post_JSON.class
+test_framework\e_Basics_Get_All_Reponses.class
+test_framework\f_DynamicJson.class
+test_framework\c_Basics_Add_and_Delete.class
+test_framework\g_DataProvider.class

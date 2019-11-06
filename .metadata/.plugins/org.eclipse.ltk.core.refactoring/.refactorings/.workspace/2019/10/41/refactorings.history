@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;com.assertions.examples&apos; to &apos;rest-assured-examples-p1&apos;" description="Rename resource &apos;com.assertions.examples&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/com.assertions.examples" name="rest-assured-examples-p1" stamp="1570565716452" updateReferences="true"/>
+</session>

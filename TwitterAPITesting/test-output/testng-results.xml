@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3782" started-at="2019-11-04T13:41:58 EST" finished-at="2019-11-04T13:42:02 EST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3782" started-at="2019-11-04T13:41:58 EST" finished-at="2019-11-04T13:42:02 EST">
+      <class name="a_PostGetDeleteTweet">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:a_PostGetDeleteTweet@646d64ab]" name="setUp" is-config="true" duration-ms="33" started-at="2019-11-04T13:41:58 EST" finished-at="2019-11-04T13:41:58 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="postTweet()[pri:1, instance:a_PostGetDeleteTweet@646d64ab]" name="postTweet" duration-ms="3089" started-at="2019-11-04T13:41:58 EST" finished-at="2019-11-04T13:42:01 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTweet -->
+        <test-method status="PASS" signature="getLatestTweet()[pri:2, instance:a_PostGetDeleteTweet@646d64ab]" name="getLatestTweet" duration-ms="343" started-at="2019-11-04T13:42:01 EST" finished-at="2019-11-04T13:42:01 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLatestTweet -->
+        <test-method status="PASS" signature="deleteTweet()[pri:3, instance:a_PostGetDeleteTweet@646d64ab]" name="deleteTweet" duration-ms="279" started-at="2019-11-04T13:42:01 EST" finished-at="2019-11-04T13:42:02 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet -->
+      </class> <!-- a_PostGetDeleteTweet -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
