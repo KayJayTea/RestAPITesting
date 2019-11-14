@@ -56,17 +56,20 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="allure_examples.allure_examples"/>
 			<item value="com.kristodd.RestAPITutorial_TwitterAPITesting"/>
 			<item value="gpath.com.tests"/>
 			<item value="Students"/>
 			<item value="Students.com.students.tests"/>
 		</list>
 		<list key="groupId">
+			<item value="allure-examples"/>
 			<item value="com.kristodd"/>
 			<item value="gpath"/>
 			<item value="Students"/>
 		</list>
 		<list key="artifactId">
+			<item value="allure-examples"/>
 			<item value="RestAPITutorial_TwitterAPITesting"/>
 			<item value="com.tests"/>
 			<item value="com.students.tests"/>
