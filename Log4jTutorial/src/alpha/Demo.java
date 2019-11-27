@@ -1,6 +1,9 @@
 package alpha;
 
-import org.apache.logging.log4j.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Demo {
 	
@@ -15,6 +18,11 @@ public class Demo {
 		log.fatal("FATAL");
 		
 		System.out.println("Test complete");
+		
+		System.getProperty("webdriver.chrome.driver", "C:\\Selenium\\Drivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.google.com/");
 	}
 
 }

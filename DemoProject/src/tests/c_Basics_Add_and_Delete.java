@@ -2,6 +2,7 @@ package tests;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -24,7 +25,7 @@ public class c_Basics_Add_and_Delete {
 	
 	@BeforeTest
 	public void setUp() throws IOException {
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\env.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + File.separator + "env.properties");
 		prop.load(fis);
 	}
 	
@@ -35,14 +36,16 @@ public class c_Basics_Add_and_Delete {
 		RestAssured.baseURI = prop.getProperty("HOST");
 		
 		// Get response
-		Response resp = given().
-				queryParam("key", prop.getProperty("KEY")).
-				body(PayLoad.getPostData()).
-				when().post(Resources.placePostData()).
-				then().assertThat().
-				statusCode(200).and().
-				contentType(ContentType.JSON).and().
-				body("status", equalTo("OK")).extract().response();
+		Response resp =
+		given()
+			.queryParam("key", prop.getProperty("KEY"))
+			.body(PayLoad.getPostData())
+		.when()
+			.post(Resources.placePostData())
+		.then().assertThat()
+			.statusCode(200).and()
+			.contentType(ContentType.JSON).and()
+			.body("status", equalTo("OK")).extract().response();
 		
 		String responseString = resp.asString();
 		System.out.println(responseString);
@@ -53,15 +56,18 @@ public class c_Basics_Add_and_Delete {
 		System.out.println(place_id);
 		
 		/** DELETE A PLACE **/
-		given().queryParam("key", prop.getProperty("KEY")).
-		body("{\r\n" + 
+		given()
+			.queryParam("key", prop.getProperty("KEY"))
+			.body("{\r\n" + 
 				"	\"place_id\" : \""+ place_id +"\"\r\n" + 
-				"}").
-		when().post(Resources.deletePostData()).
-		then().assertThat().
-		statusCode(200).and().
-		contentType(ContentType.JSON).and().
-		body("status", equalTo("OK"));
+				"}")
+		.when()
+			.post(Resources.deletePostData())
+		.then()
+			.assertThat()
+			.statusCode(200).and()
+			.contentType(ContentType.JSON).and()
+			.body("status", equalTo("OK"));
 		
 	}
 

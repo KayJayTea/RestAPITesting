@@ -1,12 +1,8 @@
 package com.fileupload.example;
 
-import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
-import static org.junit.Assert.*;
+import static io.restassured.RestAssured.given;
 
-import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.InputStream;
 
 import org.junit.Test;
 

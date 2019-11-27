@@ -14,7 +14,7 @@ public class FormAuthExample {
 	@BeforeClass
 	public static void init() {
 		filter = new SessionFilter();
-		RestAssured.baseURI = "http://localhost:9090";
+		RestAssured.baseURI = "http://localhost:8085";
 		
 		RestAssured
 		.given()
@@ -29,6 +29,7 @@ public class FormAuthExample {
 	public void getAllStudents() {
 		RestAssured
 		.given()
+			.log().all()
 			.sessionId(filter.getSessionId())
 			.get("/student/list")
 		.then()

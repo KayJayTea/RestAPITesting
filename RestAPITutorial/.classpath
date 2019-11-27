@@ -10,7 +10,6 @@
 	<classpathentry kind="lib" path="C:/Users/AAO8676/Documents/JarsForRestAssured/groovy-2.5.6.jar"/>
 	<classpathentry kind="lib" path="C:/Users/AAO8676/Documents/JarsForRestAssured/groovy-json-2.5.6.jar"/>
 	<classpathentry kind="lib" path="C:/Users/AAO8676/Documents/JarsForRestAssured/groovy-xml-2.5.6.jar"/>
-	<classpathentry kind="lib" path="C:/Users/AAO8676/Documents/JarsForRestAssured/guava-16.0.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/AAO8676/Documents/JarsForRestAssured/hamcrest-2.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/AAO8676/Documents/JarsForRestAssured/hamcrest-core-2.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/AAO8676/Documents/JarsForRestAssured/hamcrest-library-2.1.jar"/>
@@ -80,5 +79,6 @@
 	<classpathentry kind="lib" path="C:/Users/AAO8676/Documents/JarsForRestAssured/xml-path-4.0.0-javadoc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/AAO8676/Documents/JarsForRestAssured/xml-path-4.0.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/AAO8676/Documents/JarsForRestAssured/junit-4.13-rc-1.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium/Jars/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

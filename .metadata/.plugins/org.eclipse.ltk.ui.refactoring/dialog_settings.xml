@@ -14,5 +14,6 @@
 		<item key="height" value="569"/>
 	</section>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item key="deleteSubPackages" value="false"/>
 	</section>
 </section>

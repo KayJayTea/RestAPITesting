@@ -34,17 +34,22 @@ public class a_PostGetDeleteTweet {
 		
 		RestAssured.baseURI = prop.getProperty("HOST");
 		
-		Response resp = given().auth().oauth(
+		Response resp = 
+		given()
+			.auth()
+			.oauth(
 				prop.getProperty("CONSUMER_KEY"), 
 				prop.getProperty("CONSUMER_SECRET"),
 				prop.getProperty("ACCESS_TOKEN"),
-				prop.getProperty("TOKEN_SECRET")).
-		queryParam("status",  "Testing twitter posts through automation").
-		when().post(Resources.PostTweet()).
-		then().assertThat().
-		statusCode(200).and().
-		contentType(ContentType.JSON).
-		extract().response();
+				prop.getProperty("TOKEN_SECRET"))
+			.queryParam("status",  "Testing twitter posts through automation")
+		.when()
+			.post(Resources.PostTweet())
+		.then()
+			.assertThat()
+			.statusCode(200).and()
+			.contentType(ContentType.JSON)
+			.extract().response();
 			
 		JsonPath jsp = ReusableMethods.rawToJSON(resp);		
 		post_id = jsp.getString("id").toString();
@@ -56,18 +61,22 @@ public class a_PostGetDeleteTweet {
 	public void getLatestTweet() {
 		RestAssured.baseURI = prop.getProperty("HOST");
 		
-		Response resp = given().auth().oauth(
+		Response resp = 
+		given()
+			.auth()
+			.oauth(
 				prop.getProperty("CONSUMER_KEY"), 
 				prop.getProperty("CONSUMER_SECRET"),
 				prop.getProperty("ACCESS_TOKEN"),
-				prop.getProperty("TOKEN_SECRET")).
-		queryParam("count",  "1").
-		when().
-		get(Resources.SearchUserTweets()).
-		then().assertThat().
-		statusCode(200).and().
-		contentType(ContentType.JSON).
-		extract().response();
+				prop.getProperty("TOKEN_SECRET"))
+			.queryParam("count",  "1")
+		.when()
+			.get(Resources.SearchUserTweets())
+		.then()
+			.assertThat()
+			.statusCode(200).and()
+			.contentType(ContentType.JSON)
+			.extract().response();
 		
 		JsonPath jsp = ReusableMethods.rawToJSON(resp);
 		System.out.println("TWEET: " + jsp.getString("text") + "\n");		
@@ -78,17 +87,21 @@ public class a_PostGetDeleteTweet {
 		
 		RestAssured.baseURI = prop.getProperty("HOST");
 		
-		Response resp = given().auth().oauth(
+		Response resp =
+		given()
+			.auth()
+			.oauth(
 				prop.getProperty("CONSUMER_KEY"), 
 				prop.getProperty("CONSUMER_SECRET"),
 				prop.getProperty("ACCESS_TOKEN"),
-				prop.getProperty("TOKEN_SECRET")).
-		when().
-		post(Resources.DeleteTweetByID(post_id)).
-		then().assertThat().
-		statusCode(200).and().
-		contentType(ContentType.JSON).
-		extract().response();
+				prop.getProperty("TOKEN_SECRET"))
+		.when()
+			.post(Resources.DeleteTweetByID(post_id))
+		.then()
+			.assertThat()
+			.statusCode(200).and()
+			.contentType(ContentType.JSON)
+			.extract().response();
 		
 		JsonPath jsp = ReusableMethods.rawToJSON(resp);		
 		System.out.println("DELETED TWEET: " + jsp.getString("text") + "\n");

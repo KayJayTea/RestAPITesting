@@ -1,6 +1,7 @@
 package tests;
 import static io.restassured.RestAssured.given;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -22,7 +23,7 @@ public class e_Basics_Get_All_Reponses {
 	
 	@BeforeTest
 	public void setUp() throws IOException {
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\google_apis.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + File.separator + "google_apis.properties");
 		prop.load(fis);
 	}
 	

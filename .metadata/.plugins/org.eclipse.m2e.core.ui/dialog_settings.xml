@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\AAO8676\Documents\workspace-java-rest-api-automation\spring-web-services-master\spring-in-10-steps"/>
 			<item value="C:\Users\AAO8676\qa-acceptance-tests"/>
 			<item value="C:\Users\AAO8676\Documents\workspace-java-rest-api-automation\RESTAssuredAPITesting"/>
 			<item value="C:\Users\AAO8676\Documents\workspace-java-rest-api-automation\RESTAPI"/>
@@ -56,23 +57,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="allure_examples.allure_examples"/>
-			<item value="com.kristodd.RestAPITutorial_TwitterAPITesting"/>
-			<item value="gpath.com.tests"/>
-			<item value="Students"/>
-			<item value="Students.com.students.tests"/>
 		</list>
 		<list key="groupId">
-			<item value="allure-examples"/>
-			<item value="com.kristodd"/>
-			<item value="gpath"/>
-			<item value="Students"/>
 		</list>
 		<list key="artifactId">
-			<item value="allure-examples"/>
-			<item value="RestAPITutorial_TwitterAPITesting"/>
-			<item value="com.tests"/>
-			<item value="com.students.tests"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

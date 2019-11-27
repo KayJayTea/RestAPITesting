@@ -2,6 +2,7 @@ package tests;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -20,7 +21,7 @@ public class b_Basics_Post_JSON {
 	
 	@BeforeTest
 	public void setUp() throws IOException {
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\env.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + File.separator + "env.properties");
 		prop.load(fis);
 	}
 		
