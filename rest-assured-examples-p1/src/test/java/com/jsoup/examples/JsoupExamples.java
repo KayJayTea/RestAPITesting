@@ -29,12 +29,15 @@ public class JsoupExamples {
 		filter = new SessionFilter();
 		RestAssured.baseURI = "http://localhost:9090";
 
-		RestAssured.given().auth().form("user", "user", new FormAuthConfig("/login", "uname", "pwd")).filter(filter)
-				.get();
+		RestAssured.given()
+			.auth()
+			.form("user", "user", new FormAuthConfig("/login", "uname", "pwd"))
+			.filter(filter)
+			.get();
 	}
 
 	@Test
-	@Ignore
+	// @Ignore
 	public void test001_extractTitle() {
 		String response = RestAssured.given().when().get("http://localhost:9090/").asString();
 

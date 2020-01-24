@@ -10,6 +10,7 @@ import java.util.Map;
 
 import org.junit.BeforeClass;
 import org.junit.FixMethodOrder;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
@@ -73,14 +74,14 @@ public class gpath_tests {
 	}
 	
 	@Test
-	public void test_006_extractFrirstValueWhenSeveralAreReturned_findFirstTeamName() {
+	public void test_006_extractFirstValueWhenSeveralAreReturned_findFirstTeamName() {
 		Response response = get("competitions");
 		String firstTeamName = response.path("competitions.name[0]");
 		System.out.println("06. First Team Name: " + firstTeamName);
 	}
 	
 	@Test
-	public void test_007_extractFrirstValueWhenSeveralAreReturned_findLastTeamName() {
+	public void test_007_extractFirstValueWhenSeveralAreReturned_findLastTeamName() {
 		Response response = get("competitions");
 		String lastTeamName = response.path("competitions.name[-1]");
 		System.out.println("07. Last Team Name: " + lastTeamName);
@@ -120,13 +121,15 @@ public class gpath_tests {
 	
 	// Extract Single Value with Max and Min
 	@Test
+	@Ignore
 	public void test_012_extractSingleValuesWithHighestValueOfOtherElement_findHighestPlayerNumber() {
 		Response response = get("teams/66");
 		String highestNumberPlayer = response.path("squad.max {it.shirtNumber}.name");
 		System.out.println("12. " + highestNumberPlayer);
 	}
 	
-//	@Test
+	@Test
+	@Ignore
 	public void test_013_extractSingleValueWithLowestValueOfOtherElement_findLowestPlayerNumber() {
 	    Response response = get("teams/66");
 	    String lowestNumberPlayer = response.path("squad.min { it.shirtNumber }.name");

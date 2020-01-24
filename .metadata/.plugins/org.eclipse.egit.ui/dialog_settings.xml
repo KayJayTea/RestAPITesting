@@ -4,4 +4,11 @@
 	<item key="GitSelectRepositoryPage.lastRepository" value="C:\Users\AAO8676\qa-acceptance-tests\.git"/>
 	<section name="GitImportWizard">
 	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+	</section>
 </section>

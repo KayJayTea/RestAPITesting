@@ -76,10 +76,15 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="StudentAppSerenityBDD"/>
+			<item value="com.studentapp.my"/>
 		</list>
 		<list key="name">
+			<item value="Student App"/>
 		</list>
 		<list key="artifactId">
+			<item value="StudentAppSerenityBDD"/>
+			<item value="StudentApp"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

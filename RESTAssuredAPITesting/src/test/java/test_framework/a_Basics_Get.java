@@ -2,6 +2,7 @@ package test_framework;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -26,7 +27,7 @@ public class a_Basics_Get {
 	
 	@BeforeTest
 	public void setUp() throws IOException {
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\google_apis.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + File.separator + "google_apis.properties");
 		prop.load(fis);
 	}
 	

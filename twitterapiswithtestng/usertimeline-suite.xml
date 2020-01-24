@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="UserTimeline Suite">
+	<test name="RestAssured Test">
+		<classes>
+			<class name="com.twitter.statuses.UserTimelineTest"></class>
+		</classes>
+	</test>
+</suite>

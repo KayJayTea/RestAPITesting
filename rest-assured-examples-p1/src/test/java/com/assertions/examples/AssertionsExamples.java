@@ -98,6 +98,7 @@ public class AssertionsExamples {
 	// 7) Checks multiple values in the same statement
 	@Test
 	public void test_007() {
+		// This is a test
 		given()
 			.queryParam("api-key", API_KEY)
 			.when()
