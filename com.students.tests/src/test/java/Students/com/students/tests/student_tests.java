@@ -1,13 +1,11 @@
 package Students.com.students.tests;
 
-import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 import java.util.List;
 
 import org.junit.BeforeClass;
-import org.junit.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;

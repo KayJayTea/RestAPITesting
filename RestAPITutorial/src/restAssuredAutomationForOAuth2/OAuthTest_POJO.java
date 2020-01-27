@@ -14,7 +14,6 @@ import pojo.GetCourse;
 public class OAuthTest_POJO {
 
 	public static void main(String[] args) throws Exception {
-		// TODO Auto-generated method stub
 		
 		System.getProperty("webdriver.chrome.driver", "C:\\Selenium\\Drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();

@@ -17,6 +17,7 @@ public class data_driven {
 		ArrayList<String> data_array = new ArrayList<String>();
 		
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\Book1.xlsx");
+		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		
 		int number_of_sheets = workbook.getNumberOfSheets();
