@@ -2,6 +2,9 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\AAO8676\Documents\workspace-java-rest-api-automation\java-utils-master"/>
+			<item value="C:\Users\AAO8676\Documents\workspace-java-rest-api-automation\hamcrest-json-master\hamcrest-json-master"/>
+			<item value="C:\Users\AAO8676\Documents\workspace-java-rest-api-automation\hamcrest-json-master"/>
 			<item value="C:\Users\AAO8676\Documents\workspace-java-rest-api-automation\spring-web-services-master\spring-in-10-steps"/>
 			<item value="C:\Users\AAO8676\qa-acceptance-tests"/>
 			<item value="C:\Users\AAO8676\Documents\workspace-java-rest-api-automation\RESTAssuredAPITesting"/>
@@ -57,10 +60,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.baeldung.rest_assured"/>
 		</list>
 		<list key="groupId">
+			<item value="com.baeldung"/>
 		</list>
 		<list key="artifactId">
+			<item value="rest-assured"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -76,15 +82,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="StudentAppSerenityBDD"/>
-			<item value="com.studentapp.my"/>
 		</list>
 		<list key="name">
-			<item value="Student App"/>
 		</list>
 		<list key="artifactId">
-			<item value="StudentAppSerenityBDD"/>
-			<item value="StudentApp"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -93,6 +94,19 @@
 			<item value="[groupId].[artifactId]"/>
 			<item value="[groupId].[artifactId]-[version]"/>
 			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="hamcrest-json-master"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="hamcrest-json-master"/>
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>

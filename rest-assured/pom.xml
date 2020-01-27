@@ -15,17 +15,17 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<version>2.2.4.RELEASE</version>
+			<version>${springframework.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-json</artifactId>
-			<version>2.2.4.RELEASE</version>
+			<version>${springframework.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<version>2.2.4.RELEASE</version>
+			<version>${springframework.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -37,61 +37,56 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
-			<version>4.0.1</version>
+			<version>${servlet-api.version}</version>
 			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>${servlet-api.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-security</artifactId>
-			<version>9.4.26.v20200117</version>
+			<version>${jetty.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-servlet</artifactId>
-			<version>9.4.26.v20200117</version>
+			<version>${jetty.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-servlets</artifactId>
-			<version>9.4.26.v20200117</version>
+			<version>${jetty.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-io</artifactId>
-			<version>9.4.26.v20200117</version>
+			<version>${jetty.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-http</artifactId>
-			<version>9.4.26.v20200117</version>
+			<version>${jetty.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-server</artifactId>
-			<version>9.4.26.v20200117</version>
+			<version>${jetty.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-util</artifactId>
-			<version>9.4.26.v20200117</version>
+			<version>${jetty.version}</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpcore</artifactId>
-			<version>4.4.13</version>
+			<version>${httpcore.version}</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
-			<version>3.9</version>
+			<version>${commons-lang3.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.github.fge</groupId>
@@ -115,21 +110,21 @@
 		<dependency>
 			<groupId>joda-time</groupId>
 			<artifactId>joda-time</artifactId>
-			<version>2.10.5</version>
+			<version>${joda-time.version}</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-annotations</artifactId>
-			<version>2.10.1</version>
+			<version>${jackson-core.version}</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.10.1</version>
+			<version>${jackson-core.version}</version>
 		</dependency>
 
 
@@ -155,13 +150,14 @@
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
-			<version>4.5.11</version>
+			<version>${httpclient.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.codehaus.groovy</groupId>
 			<artifactId>groovy-all</artifactId>
 			<version>${groovy.version}</version>
+			<type>pom</type>
 		</dependency>
 
 		<dependency>
@@ -180,8 +176,8 @@
 			<version>${json-schema-core.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>commons-collections</groupId>
-			<artifactId>commons-collections</artifactId>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
 			<version>${commons-collections.version}</version>
 		</dependency>
 
@@ -190,7 +186,7 @@
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
-			<version>4.0.0</version>
+			<version>${rest-assured.version}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -198,7 +194,7 @@
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>spring-mock-mvc</artifactId>
-			<version>4.0.0</version>
+			<version>${rest-assured-spring-mock-mvc.version}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -206,7 +202,7 @@
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>json-schema-validator</artifactId>
-			<version>4.2.0</version>
+			<version>${rest-assured-json-schema-validator.version}</version>
 		</dependency>
 
 		<dependency>
@@ -218,31 +214,35 @@
 	</dependencies>
 
 	<properties>
-		<guava.version>18.0</guava.version>
+		<springframework.version>2.2.4.RELEASE</springframework.version>
+		<guava.version>23.0</guava.version>
 		<jackson-coreutils.version>1.8</jackson-coreutils.version>
 		<guava.version>19.0</guava.version>
-		<servlet-api.version>2.5</servlet-api.version>
+		<servlet-api.version>4.0.1</servlet-api.version>
 		<javax.mail.version>1.4.7</javax.mail.version>
-		<jetty.version>9.4.0.v20161208</jetty.version>
+		<jetty.version>9.4.26.v20200117</jetty.version>
+		<commons-lang3.version>3.9</commons-lang3.version>
 
-		<commons-collections.version>3.2.2</commons-collections.version>
+		<commons-collections.version>4.4</commons-collections.version>
 
-		<httpcore.version>4.4.5</httpcore.version>
-		<httpclient.version>4.5.2</httpclient.version>
+		<httpcore.version>4.4.13</httpcore.version>
+		<httpclient.version>4.5.11</httpclient.version>
 
 		<uri-template.version>0.9</uri-template.version>
-		<libphonenumber.version>8.0.0</libphonenumber.version>
-		<joda-time.version>2.9.6</joda-time.version>
+		<libphonenumber.version>8.11.2</libphonenumber.version>
+		<joda-time.version>2.10.5</joda-time.version>
+		<jackson-core.version>2.10.1</jackson-core.version>
 		<msg-simple.version>1.1</msg-simple.version>
 		<btf.version>1.2</btf.version>
-		<groovy.version>2.4.7</groovy.version>
-		<wiremock.version>2.4.1</wiremock.version>
+		<groovy.version>2.5.9</groovy.version>
+		<wiremock.version>2.5.1</wiremock.version>
 
 		<github-json-schema-validator.version>2.2.6</github-json-schema-validator.version>
 		<json-schema-core.version>1.2.5</json-schema-core.version>
 
-		<rest-assured.version>3.0.1</rest-assured.version>
-		<rest-assured-json-schema-validator.version>3.0.1</rest-assured-json-schema-validator.version>
+		<rest-assured.version>4.2.0</rest-assured.version>
+		<rest-assured-spring-mock-mvc.version>4.2.0</rest-assured-spring-mock-mvc.version>
+		<rest-assured-json-schema-validator.version>4.2.0</rest-assured-json-schema-validator.version>
 
 		<scribejava.version>2.5.3</scribejava.version>
 	</properties>

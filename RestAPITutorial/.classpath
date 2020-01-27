@@ -80,5 +80,6 @@
 	<classpathentry kind="lib" path="C:/Users/AAO8676/Documents/JarsForRestAssured/xml-path-4.0.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/AAO8676/Documents/JarsForRestAssured/junit-4.13-rc-1.jar"/>
 	<classpathentry kind="lib" path="C:/Selenium/Jars/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="C:/Users/AAO8676/Documents/JarsForRestAssured/json-schema-validator-2.2.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
