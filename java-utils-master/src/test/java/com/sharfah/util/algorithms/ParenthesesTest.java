@@ -1,16 +1,16 @@
 package com.sharfah.util.algorithms;
 
-import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.hasItems;
 
+import org.hamcrest.MatcherAssert;
 import org.junit.Test;
 
 public class ParenthesesTest {
 
-  @Test
-  public void test() {
-    assertThat(Parentheses.generate(1), hasItems("()"));
-    assertThat(Parentheses.generate(2), hasItems("()()", "(())"));
-    assertThat(Parentheses.generate(3), hasItems("()()()", "((()))", "()(())", "(())()", "(()())"));
-  }
+	@Test
+	public void test() {
+		MatcherAssert.assertThat(Parentheses.generate(1), hasItems("()"));
+		MatcherAssert.assertThat(Parentheses.generate(2), hasItems("()()", "(())"));
+		MatcherAssert.assertThat(Parentheses.generate(3), hasItems("()()()", "((()))", "()(())", "(())()", "(()())"));
+	}
 }
