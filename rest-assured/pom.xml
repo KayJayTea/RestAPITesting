@@ -220,7 +220,7 @@
 		<guava.version>19.0</guava.version>
 		<servlet-api.version>4.0.1</servlet-api.version>
 		<javax.mail.version>1.4.7</javax.mail.version>
-		<jetty.version>9.4.26.v20200117</jetty.version>
+		<jetty.version>9.4.35.v20201120</jetty.version>
 		<commons-lang3.version>3.9</commons-lang3.version>
 
 		<commons-collections.version>4.4</commons-collections.version>
