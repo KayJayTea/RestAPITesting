@@ -214,7 +214,7 @@
 	</dependencies>
 
 	<properties>
-		<springframework.version>2.2.4.RELEASE</springframework.version>
+		<springframework.version>2.5.12</springframework.version>
 		<guava.version>23.0</guava.version>
 		<jackson-coreutils.version>1.8</jackson-coreutils.version>
 		<guava.version>19.0</guava.version>
