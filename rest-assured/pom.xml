@@ -231,7 +231,7 @@
 		<uri-template.version>0.9</uri-template.version>
 		<libphonenumber.version>8.11.2</libphonenumber.version>
 		<joda-time.version>2.10.5</joda-time.version>
-		<jackson-core.version>2.10.1</jackson-core.version>
+		<jackson-core.version>2.12.7.1</jackson-core.version>
 		<msg-simple.version>1.1</msg-simple.version>
 		<btf.version>1.2</btf.version>
 		<groovy.version>2.5.9</groovy.version>
